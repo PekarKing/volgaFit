@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ВолгаФит</string>
+    <string name="hello">HELLO</string>
+    <string name="title_activity_menu">ActivityMenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+    <string name="action_settings">Settings</string>
+    <string name="working">В разработке</string>
+
+
+    <string name="slide1_title">Прекрасный вид</string>
+    <string name="slide1_descr">Клуб находится на набережной в здании речного вокзала, в самом центре Волгограда. Общая площадь клуба составляет 2 000кв.м, а высота потолков достигает 6 м.</string>
+    <string name="slide2_title">Комфорт и эффективность</string>
+    <string name="slide2_descr">Современное профессиональное оборудование. Насыщенная программа занятий, опытные инструкторы, совершенная система климат-контроля, позитивная музыка.</string>
+    <string name="slide3_title">Эффективные программы</string>
+    <string name="slide3_descr">Более 30 видов групповых направлений: Bike. Body Pump. TRX, Gymstick, Boxing, Yoga, Stretch, Pilates, Dance Mix, Only Women</string>
+    <string name="slide4_title">Место для знакомств</string>
+    <string name="slide4_descr">Для многих Волгафит стал любимым местом времяпрепровождения, где люди знакомятся, общаются и укрепляют здоровье.</string>
+    <string name="slide5_title">Команда профессионалов</string>
+    <string name="slide5_desct">Сертифицированные персональные тренеры с опытом работы помогут Вам в проведении максимально эффективных и безопасных тренировок.</string>
+    <string name="slide6_title">Удобное время</string>
+    <string name="slide6_descr">Клуб работает 7 дней в неделю с 7:00 до 23:00 по будням и с 9:00 до 22:00 по выходным</string>
+    <string name="adress">АДРЕС</string>
+    <string name="adress_cur">г.Волгоград, набережная 62-й армии, д.6, Речной вокзал</string>
+    <string name="tel">ТЕЛЕФОН</string>
+    <string name="tel_cur">+7 (8442) 38-38-38</string>
+    <string name="email">EMAIL</string>
+    <string name="email_cur">sales@volgafit.ru</string>
+    <string name="get_better">СТАНОВИСЬ ЛУЧШЕ!</string>
+    <string name="start_descr">Получи максимальные возможности для тренировок и поддержку опытных наставников</string>
+    <string name="choose_train">ВЫБРАТЬ ЗАНЯТИЕ</string>
+
+    <string-array name="trains">
+        <item>TRX PULSE*</item>
+        <item>POWERBALL</item>
+        <item>HOT IRON</item>
+        <item>\u0414\u0435\u0442\u0441\u043a\u0438\u0439 \u0431\u043e\u043a\u0441 \u00a9</item>
+        <item>\u0418\u0434\u0435\u0430\u043b\u044c\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430 \u00a9</item>
+        <item>ABD</item>
+        <item>Zumba</item>
+        <item>Yoga</item>
+        <item>Just Step</item>
+        <item>Stretch</item>
+        <item>Easy Yoga</item>
+        <item>Pilates</item>
+        <item>Fit Fight*</item>
+        <item>Leg Training</item>
+        <item>TRX*</item>
+        <item>ABD Stretch</item>
+        <item>Reebok. \u0421\u0442\u0430\u043d\u044c \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u043e\u043c</item>
+        <item>\u0421\u0443\u043f\u0435\u0440 \u043f\u043e\u043f\u0430 \u00a9</item>
+        <item>Gymstick</item>
+        <item>FT</item>
+        <item>Body Training</item>
+        <item>BODY PUMP</item>
+        <item>Only Women</item>
+        <item>\u0421XWORX</item>
+    </string-array>
+</resources>

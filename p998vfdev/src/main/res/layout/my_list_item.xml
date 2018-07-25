@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/itemChb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_checkbox"
+        android:focusable="false"
+        app:layout_constraintRight_toRightOf="@+id/img_lyt"
+        app:layout_constraintTop_toTopOf="@+id/gym" />
+
+    <ImageView
+        android:id="@+id/img_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="23dp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img"-->
+        <!--android:layout_width="348dp"-->
+        <!--android:layout_height="154dp"-->
+        <!--android:background="@drawable/abd_stretch" />-->
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="start"
+        android:text="Title"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/img_lyt"
+        app:layout_constraintRight_toRightOf="@+id/img_lyt"
+        app:layout_constraintTop_toBottomOf="@+id/img_lyt"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Description"
+
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/img_lyt"
+        app:layout_constraintRight_toRightOf="@+id/img_lyt"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_angle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="164dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="56dp" />
+
+    <TextView
+        android:id="@+id/gym"
+        android:layout_width="48dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/yellow_angle"
+        android:text="Gym"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/descr"
+        app:layout_constraintLeft_toLeftOf="@+id/img_lyt" />
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/like"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:checked="false"-->
+        <!--android:button="@drawable/custom_checkbox"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/descr"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/img_lyt" />-->
+
+</android.support.constraint.ConstraintLayout>
