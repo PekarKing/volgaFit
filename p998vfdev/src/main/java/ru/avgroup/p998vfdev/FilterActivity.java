@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import ru.avgroup.p998vfdev.fragment.AbstractTabFragment;
+
 public class FilterActivity extends HomeActivity implements View.OnClickListener {
 
     ListView lvMain;
@@ -40,6 +42,8 @@ public class FilterActivity extends HomeActivity implements View.OnClickListener
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.appBtn:
+                CharSequence cs = "POWERBALL";
+                AbstractTabFragment.getFilter(cs);
                 finish();
                 break;
         }

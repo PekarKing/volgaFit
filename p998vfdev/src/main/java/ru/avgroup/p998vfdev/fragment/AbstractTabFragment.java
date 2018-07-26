@@ -30,9 +30,11 @@ public class AbstractTabFragment extends Fragment {
 
     private static int pos = 0;
     private String title = "title";
+    private static CharSequence filter;
     protected static Context context;
     protected static View view;
     protected static final int LAYOUT = R.layout.activity_list;
+    private static SimpleTrainsTableAdapter sAdapter;
 
     String[] from = {"title", "description", "time", "image", "gym"};
     int[] to = {R.id.title, R.id.descr, R.id.time, R.id.img_lyt, R.id.gym,};
@@ -45,6 +47,10 @@ public class AbstractTabFragment extends Fragment {
 
     public static void getPos(int a) {
         pos = a;
+    }
+
+    public static void getFilter(CharSequence cs) {
+        filter = cs;
     }
 
     public String getTitle(){
@@ -144,7 +150,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(0);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             setTitle("Пн");
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -178,7 +185,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(1);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -211,7 +219,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(2);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -244,7 +253,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(3);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -278,7 +288,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(4);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -312,7 +323,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(5);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -346,7 +358,8 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(6);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            SimpleTrainsTableAdapter sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
