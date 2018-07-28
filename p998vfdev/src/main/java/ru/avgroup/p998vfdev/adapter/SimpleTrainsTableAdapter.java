@@ -80,6 +80,7 @@ public class SimpleTrainsTableAdapter extends BaseAdapter implements Filterable,
     private int layout;
     private SQLiteDatabase db;
     private Map<String, Object> m;
+    private int mDay;
 
     private List<? extends Map<String, ?>> mData;
 
@@ -109,9 +110,10 @@ public class SimpleTrainsTableAdapter extends BaseAdapter implements Filterable,
      *        TextViews. The first N views in this list are given the values of the first N columns
      *        in the from parameter.
      */
-    public SimpleTrainsTableAdapter(Context context, List<? extends Map<String, ?>> data,
+    public SimpleTrainsTableAdapter(Context context, List<? extends Map<String, ?>> data, int day,
                                  @LayoutRes int resource, String[] from, @IdRes int[] to) {
         mData = data;
+        mDay = day;
         mResource = mDropDownResource = resource;
         mFrom = from;
         mTo = to;
@@ -124,7 +126,11 @@ public class SimpleTrainsTableAdapter extends BaseAdapter implements Filterable,
      * @see android.widget.Adapter#getCount()
      */
     public int getCount() {
-        return mData.size();
+        if (mData == null) {
+            return 0;
+        } else {
+            return mData.size();
+        }
     }
 
     /**

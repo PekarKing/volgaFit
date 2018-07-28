@@ -60,6 +60,7 @@ public class HomeActivity extends AppCompatActivity {
                 if (a == R.id.filter){
                     Intent intent = new Intent(HomeActivity.this, FilterActivity.class);
                     startActivity(intent);
+//                    finish();
                 }
                 else {
                     return false;

@@ -150,7 +150,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(0);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 0, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             setTitle("Пн");
@@ -185,7 +185,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(1);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 1, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -219,7 +219,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(2);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 2, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -253,7 +253,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(3);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 3, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -288,7 +288,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(4);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 4, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -323,7 +323,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(5);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 5, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -358,7 +358,7 @@ public class AbstractTabFragment extends Fragment {
             view = inflater.inflate(LAYOUT, container, false);
             Data = JsonParse.getData(6);
             ListView lv = (ListView) view.findViewById(R.id.rasp);
-            sAdapter = new SimpleTrainsTableAdapter(context, Data, R.layout.my_list_item, from, to);
+            sAdapter = new SimpleTrainsTableAdapter(context, Data, 6, R.layout.my_list_item, from, to);
             sAdapter.getFilter().filter(filter);
             lv.setAdapter(sAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

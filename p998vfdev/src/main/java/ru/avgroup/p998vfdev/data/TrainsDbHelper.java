@@ -17,9 +17,7 @@ public class TrainsDbHelper extends SQLiteOpenHelper {
             + TrainsEntry.COLUMN_DESCR + " TEXT NOT NULL, "
             + TrainsEntry.COLUMN_TIME + " TEXT NOT NULL, "
             + TrainsEntry.COLUMN_GYM + " TEXT NOT NULL, "
-//            + TrainsEntry.COLUMN_CHECK + " INTEGER DEFAULT 0, "
             + TrainsEntry.COLUMN_WEEKDAY + " TEXT NOT NULL );";
-//            + TrainsEntry.COLUMN_CHECK + " INTEGER NOT NULL DEFAULT 0);";
 
     /**
      * Конструктор {@link TrainsDbHelper}.

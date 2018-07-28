@@ -1,5 +1,6 @@
 package ru.avgroup.p998vfdev;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -42,8 +43,10 @@ public class FilterActivity extends HomeActivity implements View.OnClickListener
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.appBtn:
-                CharSequence cs = "POWERBALL";
+                CharSequence cs = "p";
                 AbstractTabFragment.getFilter(cs);
+                Intent intent = new Intent(FilterActivity.this, HomeActivity.class);
+                startActivity(intent);
                 finish();
                 break;
         }
